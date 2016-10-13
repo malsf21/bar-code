@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bar-Code | Rap Lyric Generator</title>
+    <meta name="description" content="">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+  </head>
+  <body>
+    <div class="container container-main">
+      <div class="text-xs-center">
+        <h1>Bar-Code: A Rhyme Generator</h1>
+        <code id="flavour"></code>
+        <h2 class="spacing-top">Rhyme Settings</h2>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="form-group">
+            <label for="prefix">Prefix</label>
+            <select class="form-control" id="prefix">
+              <option value="">None</option>
+              <option value="hey">hey</option>
+              <option value="dude">dude</option>
+              <option value="boy">boy</option>
+              <option value="girl">girl</option>
+              <option value="mama">mama</option>
+              <option value="fuck">fuck</option>
+              <option value="hey lil'">hey lil'</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="form-group">
+            <label for="middle">Middle</label>
+            <select class="form-control" id="middle">
+              <option value="">None</option>
+              <option value="that">that</option>
+              <option value=",">,</option>
+              <option value="dude">dude</option>
+              <option value="boy">boy</option>
+              <option value="girl">girl</option>
+              <option value="mama">mama</option>
+              <option value="fuck">fuck</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="form-group">
+            <label for="length">Non-Rhyme Length</label>
+            <select class="form-control" id="length">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="form-group">
+            <label for="ending">Rhyme</label>
+            <select class="form-control" id="ending">
+              <option value="age">age</option>
+              <option value="ash">ash</option>
+              <option value="ate">ate</option>
+              <option value="ay">ay</option>
+              <option value="ble">ble</option>
+              <option value="ight">ight</option>
+              <option value="ine">ine</option>
+              <option value="ing">ing</option>
+              <option value="ush">ush</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="form-group">
+            <label for="suffix">Suffix</label>
+            <select class="form-control" id="suffix">
+              <option value="">None</option>
+              <option value="that part">that part</option>
+              <option value="it">it</option>
+              <option value="aye">aye</option>
+              <option value="shit">shit</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="text-xs-center spacing-top">
+        <button class="btn btn-outline-primary" id="newline">New Line</button>
+        <button class="btn btn-outline-danger" id="clear">Clear</button>
+      </div>
+      <div class="card card-block spacing-top text-xs-center" id="output">
+
+      </div>
+    </div>
+    <footer class="text-xs-center">
+      Made by <a href="https://matthewwang.me">Matthew Wang</a> on <a href="https://github.com/malsf21/bar-code"><span class="fa fa-github"></span></a>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="output.js"></script>
+    <script src="js/bar-code.js"></script>
+  </body>
+</html>
